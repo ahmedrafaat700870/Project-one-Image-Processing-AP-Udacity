@@ -1,0 +1,46 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json src/index.ts",
+    "bulid": "tsc",
+    "start": "npm run bulid && node ./dist/index.js",
+    "formate": "prettier --write ./**/**/*.ts",
+    "lint": "eslint ./src/**/*.ts",
+    "lint-fix": "eslint ./src/**/*.ts --fix",
+    "test": "npm run bulid && npx jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^3.10.3",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.21",
+    "@types/sharp": "^0.30.0",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0",
+    "sharp": "^0.30.3"
+  }
+}

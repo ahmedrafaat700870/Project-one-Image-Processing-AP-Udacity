@@ -1,0 +1,35 @@
+Image processing API
+
+Scripts
+Run prettier
+
+    npm run foramte
+
+Run eslint
+
+    npm run lint
+
+Run eslint to fix
+
+    npm run lint-fix
+
+Start the server
+
+    npm run dev
+
+Build the project
+
+    npm run build
+
+Run the application
+
+Install dependencies
+
+    npm install
+
+Running Tests
+To run tests, run the following command
+
+    npm run test
+
+Author:(@Ahmed_Rafaat)
