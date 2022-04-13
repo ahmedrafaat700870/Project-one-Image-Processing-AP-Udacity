@@ -1,5 +1,5 @@
 import path from 'path';
-const FoulderOutput = '../../out/';
+const FoulderOutput = '../../dist/out/';
 const OutPutFile = (
   name: string | null,
   Height: number | null,
