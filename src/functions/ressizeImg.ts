@@ -6,10 +6,7 @@ const ResizeImg = async (
   Width: string,
   Height: string
 ) => {
-  console.log(Width);
-  console.log(Height);
-
-  await sharp(input_path)
+  return sharp(input_path)
     .resize({ width: parseInt(Width), height: parseInt(Height) })
     .toFile(output_path, (err) => err);
 };
